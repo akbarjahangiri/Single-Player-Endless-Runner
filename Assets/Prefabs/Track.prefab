@@ -168,6 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1533218482889202442}
+  - component: {fileID: 7690562871940630664}
   m_Layer: 0
   m_Name: obstacleSmall
   m_TagString: Untagged
@@ -194,6 +195,31 @@ Transform:
   m_Father: {fileID: 1005914765159731058}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7690562871940630664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011649204234185881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaed5a7d0a697224e8ee722965167b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - serializedVersion: 2
+    rgba: 6435881
+  - serializedVersion: 2
+    rgba: 5000434
+  - serializedVersion: 2
+    rgba: 3906540
+  - serializedVersion: 2
+    rgba: 1497079
+  childrens:
+  - {fileID: 8573150384494887876}
+  - {fileID: 4147431867983022386}
+  - {fileID: 8230050924720304580}
 --- !u!1 &3886755556748564432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4922023019838997670}
+  - component: {fileID: 8398476277383147367}
   m_Layer: 0
   m_Name: obstacleMedium
   m_TagString: Untagged
@@ -1225,6 +1252,31 @@ Transform:
   m_Father: {fileID: 1005914765159731058}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8398476277383147367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5485478861452986637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaed5a7d0a697224e8ee722965167b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - serializedVersion: 2
+    rgba: 5460971
+  - serializedVersion: 2
+    rgba: 2349561
+  - serializedVersion: 2
+    rgba: 8171062
+  - serializedVersion: 2
+    rgba: 9991192
+  childrens:
+  - {fileID: 3901681373854946655}
+  - {fileID: 4596450874761832205}
+  - {fileID: 7305164929760487378}
 --- !u!1 &5541911282302610117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,6 +1286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4289527654738882045}
+  - component: {fileID: 4088374287942404415}
   m_Layer: 0
   m_Name: obstacleTall
   m_TagString: Untagged
@@ -1260,6 +1313,31 @@ Transform:
   m_Father: {fileID: 1005914765159731058}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4088374287942404415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5541911282302610117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaed5a7d0a697224e8ee722965167b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - serializedVersion: 2
+    rgba: 14017079
+  - serializedVersion: 2
+    rgba: 9832025
+  - serializedVersion: 2
+    rgba: 8391367
+  - serializedVersion: 2
+    rgba: 707579
+  childrens:
+  - {fileID: 3886755556748564432}
+  - {fileID: 4657082903247024332}
+  - {fileID: 4282856255339075297}
 --- !u!1 &7266813230317690912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,7 +1406,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c5b2af60e60c56408c30993ba57ca7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1391,16 +1469,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0ee08c6f371bc44ac093513e4bbc72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
   obstacles:
   - {fileID: 5485478861452986637}
+  - {fileID: 1447360688694108057}
   - {fileID: 5541911282302610117}
+  - {fileID: 1447360688694108057}
   - {fileID: 3011649204234185881}
-  - {fileID: 1447360688694108057}
-  - {fileID: 1447360688694108057}
-  - {fileID: 1447360688694108057}
-  - {fileID: 1447360688694108057}
-  - {fileID: 1447360688694108057}
+  - {fileID: 5541911282302610117}
+  - {fileID: 5485478861452986637}
+  - {fileID: 3011649204234185881}
 --- !u!1 &7305164929760487378
 GameObject:
   m_ObjectHideFlags: 0

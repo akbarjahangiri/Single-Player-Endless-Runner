@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
-        playerMaterial = GetComponent<Renderer>().material;
-        playerMaterial.DOGradientColor(playerGradient, 3f).SetLoops(-1,LoopType.Yoyo);
+        // playerMaterial = GetComponent<Renderer>().material;
+        // playerMaterial.DOGradientColor(playerGradient, 3f).SetLoops(-1,LoopType.Yoyo);
     }
 
     // Update is called once per frame
