@@ -14,11 +14,14 @@ public class PlayerController : MonoBehaviour
     private Vector2 _fingerStartPos;
     public GameEvent onSwipe;
     private AudioSource _audioSource;
+    [SerializeField] private Gradient playerGradient;
+    private Material playerMaterial;
 
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
-
+        playerMaterial = GetComponent<Renderer>().material;
+        playerMaterial.DOGradientColor(playerGradient, 3f).SetLoops(-1,LoopType.Yoyo);
     }
 
     // Update is called once per frame
